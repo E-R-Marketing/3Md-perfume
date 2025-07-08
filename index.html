@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>3MD Perfume</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Space Grotesk', sans-serif;
+      background-color: #000;
+      color: #fff;
+    }
+    .hero-video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -1;
+    }
+    .hero-overlay {
+      position: relative;
+      z-index: 1;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 2rem;
+    }
+    .feature-card {
+      background: linear-gradient(135deg, #1c1c1e, #121212);
+      border: 1px solid #2c2c2e;
+      border-radius: 1rem;
+      padding: 1.5rem;
+      transition: transform 0.3s;
+    }
+    .feature-card:hover {
+      transform: scale(1.05);
+    }
+    .feature-card h3 {
+      color: #34d399;
+      margin-bottom: 0.5rem;
+    }
+    .feature-card p {
+      color: #999;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body class="bg-black text-white overflow-x-hidden">
+  <!-- Hero Section -->
+  <section class="vh-100 d-flex flex-column justify-content-center align-items-center text-center px-4 position-relative">
+    <video class="hero-video" autoplay muted loop>
+      <source src="/project stuff/perfume.mp4" type="video/mp4" />
+     
+    </video>
+    <div class="hero-overlay">
+      <h1 class="display-3 fw-bold bg-gradient-to-r from-purple-500 via-blue-400 to-green-400 bg-clip-text text-transparent">
+        3MD PHASE FLUID
+      </h1>
+      <p class="lead text-gray-300 max-w-lg mx-auto">A future-forward blend of levitation, aurora-phase nanoglass, and molecular alchemy.</p>
+      <button class="btn btn-lg mt-4 px-5 py-2 rounded-pill text-white" style="background: linear-gradient(to right, #6366f1, #d946ef);">
+        Discover the Formula
+      </button>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section class="py-5 px-4 bg-dark">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Levitation Technology</h3>
+            <p>Suspended by magnetic gyros within a titanium exoskeleton.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Reactive Aurora Shell</h3>
+            <p>Shifts from cosmic violet to nebula red based on heat and motion.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Phase Fluid Core</h3>
+            <p>Swirls from mercury silver to molten gold in responsive motion.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Tungsten Dodecahedron Cap</h3>
+            <p>Crafted with haptic grooves and ultra-density.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Obsidian Gyro Base</h3>
+            <p>Built for perfect balance and anti-gravity projection.</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-lg-4">
+          <div class="feature-card">
+            <h3>Molecular Nano-Etching</h3>
+            <p>Laser precision, visible under UV spectrum only.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section class="py-5 px-4 bg-black text-center">
+    <div class="container">
+      <h2 class="text-2xl font-bold mb-4 text-white">What Critics Say</h2>
+      <blockquote class="text-gray-400 italic">“A perfume that levitates not just physically, but emotionally. The 3MD experience is otherworldly.” — LuxeMag</blockquote>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-4 text-center bg-black text-muted">
+    &copy; 2025 3MD | Designed for the fluid future
+  </footer>
+</body>
+</html>
